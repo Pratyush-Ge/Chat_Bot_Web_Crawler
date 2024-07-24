@@ -6,10 +6,6 @@ This project involves building a system that crawls a user-specified website, sc
 
 ## Tech Stack
 
-- **Client**: React, TailwindCSS and plugins, Socket.io
-- **Server**: Node, Express, MongoDB
-
-
 - **Apify**: Used for crawling and scraping the website data. It extracts the website's textual content, including titles, descriptions, and keywords, and saves it for further processing.
 - **Pinecone**: Utilized to create a vector database. The scraped data is split into manageable chunks and embedded using SentenceTransformerEmbeddings. These embeddings are then stored in a Pinecone index to enable efficient similarity searches.
 - **Gemini API**: Employed for generating responses. When a user submits a query, the system searches the vector database for relevant documents and uses the Gemini Generative Model to generate a response based on the context provided by the retrieved documents.
